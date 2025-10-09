@@ -1,0 +1,564 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+:focus,:active {
+    outline: none;
+}
+a:focus,a:active {
+    outline: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+legend {
+	display: block;
+}
+/*----------END----------------------*/
+
+:root {
+    --white:#ffffff;
+    --beige: #AA9B77;
+    --dark-beige: #918363;
+    --light-beige: #F5F6F7;
+    --black: #424242;
+    --dark: #333333;
+    --grey: #535253;
+    --light-grey: #cccccc;
+}
+
+@font-face {
+    font-family: 'Quicksand_bold';
+    src: url('quicksand/Quicksand_Bold.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Quicksand_regular';
+    src: url('quicksand/Quicksand_Book.otf') format('opentype');
+}
+
+.body {
+    font-family: 'Quicksand_regular', sans-serif;
+}
+
+.header {
+    background: url("resources/header-image.png") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.header__block1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-right: 65px;
+    padding-left: 65px;
+}
+.header__menu-list {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.header__menu-item_first {
+    letter-spacing: 0.0156em;
+}
+
+.header__menu-item_second {
+    letter-spacing: 0.0078em;
+}
+
+.header__menu-item-link {
+    color: var(--white);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+.header__block2 {
+    position: absolute;
+    top: 38%;
+    width: 100%;
+}
+
+.header__header-text{
+    text-align: center;
+    color: var(--white);
+}
+
+.mix-bottom-margin-10 {
+    margin-bottom: 10px;
+}
+
+.header__title {
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0.0098em;
+}
+
+.header__description {
+    font-size: 20px;
+    line-height: 24px;
+}
+.header__block3 {
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    text-align: center;
+}
+
+.mix-padding-left-right-96 {
+    padding-left: 96px;
+    padding-right: 96px;
+}
+
+.categories-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    background-color: var(--light-beige);
+}
+
+.categories-filter__filter-group {
+    display: flex;
+    gap: 36px;
+}
+
+.categories-filter__filter-name {
+    text-transform: uppercase;
+    color: var(--dark);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.categories-filter__filter-checkbox {
+  appearance: none;
+  width: 25px;
+  height: 24px;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--white);
+  cursor: pointer;
+  margin-right: 18px;
+  position: relative;
+}
+
+.categories-filter__filter-checkbox::before {
+  content: "";
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: url("resources/check.svg") center center no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.categories-filter__filter-checkbox:checked::before {
+  display: block;
+}
+
+.categories-filter__submit {
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: var(--beige);
+    padding:20px 33px 20px 33px;
+    border-radius: 5px;
+}
+
+.products__results {
+    padding-top: 85px;
+    padding-bottom: 130px;
+    display:flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.products__category-name {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+.flex-direction-wrapper {
+    display:flex;
+    flex-direction: row;
+}
+
+.products__pagination {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 18px;
+}
+
+.mix-row-reverse {
+    flex-direction: row-reverse;
+}
+
+.page-counter {
+    color: var(--beige);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.category-name {
+    color: var(--black);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: var(--light-grey);
+}
+
+.product-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.product-card {
+    background-color: var(--light-beige);
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px 24px;
+}
+
+.product-card__info-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mix-display-block {
+    display: block;
+}
+
+.product-card__size {
+    color: var(--black);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+.product-card__picture-wrapper {
+    padding: 28px 0;
+}
+
+.product-card__picture{
+    height: 260px;
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card__product-image {
+    height: 189px;
+}
+
+.product-card__color-sheet {
+    display: flex;
+    gap: 5px;
+}
+
+.product-card__product-color {
+    width: 22px;
+    height: 21px;
+    border-radius: 50%;
+}
+
+.product-card__product-color_blue {
+    background-color: #165EB9;
+}
+.product-card__product-color_yellow {
+    background-color: #FFE637;
+}
+.product-card__product-color_gray {
+    background-color: #535253;
+}
+.product-card__product-color_pink {
+    background-color: #D3A7AC;
+}
+.product-card__product-color_white {
+    background-color: #FFFFFF;
+}
+
+.product-card__type {
+    color: var(--beige);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.product-card__price {
+    color: var(--black);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 22px;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+
+.about-us {
+    background-color: var(--beige);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-us__text-block {
+    border:2px solid var(--dark-beige);
+    height: 250px;
+    width: 70%;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 70px 0;
+}
+
+.about-us__title {
+    text-transform: uppercase;
+    color: var(--dark-beige);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.0469em;
+    text-align: center;
+    position: absolute;
+    top:-10px;
+    background-color: var(--beige);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-us__description {
+    color: var(--black);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.advertisement {
+    height: 72px;
+    padding: 0 70px;
+    background-color: var(--grey);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.advertisement__description {
+    color: var(--white);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.0176em;
+}
+
+.footer {
+    background-color: var(--black);
+}
+
+.footer__wrapper {
+    padding: 104px 65px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__trekking-info {
+    width: 318px;
+}
+
+.trekking-title {
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+}
+.trekking-description {
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.footer__menu-list {
+    display: flex;
+    gap: 5px;
+}
+
+.footer__menu-item:not(:last-child)::after {
+    content: '|';
+    margin: 0 5px;
+    color: var(--beige);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.footer__menu-item-link {
+    text-transform: uppercase;
+    color: var(--white);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.design-credit {
+    display: block;
+    text-align: right;
+    color: var(--white);
+    font-family: 'Quicksand_bold', sans-serif;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+
+
+@media (max-width: 832px) {
+    .product-cards {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 805px) {
+    .categories-filter {
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 780px) {
+    .footer__wrapper {
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        padding: 50px 65px;
+    }
+
+    .footer__trekking-info {
+        width: 100%;
+    }
+
+    .trekking-title {
+        text-align: center;
+    }
+
+    .trekking-description {
+        text-align: center;
+    }
+
+    .design-credit {
+        text-align: center;
+    }
+}

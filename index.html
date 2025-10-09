@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+
+<body class="body">
+    <header class="header">
+        <div class="header__block1">
+            <div class="logo">
+                <a href="#">
+                    <img src="resources/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav class="header__menu">
+                <ul class="header__menu-list">
+                    <li class="header__menu-item header__menu-item_first"><a class="header__menu-item-link"
+                            href="#">Home</a></li>
+                    <li class="header__menu-item header__menu-item_first"><a class="header__menu-item-link"
+                            href="#">Products</a></li>
+                    <li class="header__menu-item"><a href="#">
+                            <img src="resources/cart.svg" alt="Cart">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header__block2">
+            <div class="header__header-text">
+                <h1 class="header__title mix-bottom-margin-10">Our clothing , your comfort</h1>
+                <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do<br>eiusmod tempor incididunt ut labore et dolore<br>magna aliqua.
+                </p>
+            </div>
+        </div>
+        <div class="header__block3">
+            <a href="#">
+                <img src="resources/arrow-down.svg" alt="Arrow down">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section class="products">
+            <form class="categories-filter mix-padding-left-right-96">
+                <div class="categories-filter__filter-group">
+                    <label class="categories-filter__filter-name">
+                        <input class="categories-filter__filter-checkbox" type="checkbox" name="category" value="men">
+                        men
+                    </label>
+                    <label class="categories-filter__filter-name">
+                        <input class="categories-filter__filter-checkbox" type="checkbox" name="category" value="women">
+                        women
+                    </label>
+                    <label class="categories-filter__filter-name">
+                        <input class="categories-filter__filter-checkbox" type="checkbox" name="category"
+                            value="children"> children
+                    </label>
+                </div>
+                <button class="categories-filter__submit" type="submit">see all products</button>
+
+            </form>
+            <div class="products__results mix-padding-left-right-96">
+                <div class="products__category">
+                    <div class="products__category-name">
+                        <h2 class="category-name">men</h2>
+                        <span class="line"></span>
+                    </div>
+                    <div class="flex-direction-wrapper mix-row-reverse">
+                        <div class="products__pagination">
+                        <span class="page-counter">1 / 5</span>
+                        <div class="direction-arrows">
+                            <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4764 2.07777C10.7102 1.89582 10.7102 1.60471 10.4764 1.42312L8.92414 0.215661C8.69031 0.03407 8.31626 0.03407 8.0825 0.215661L1.14376 5.61219C0.909927 5.79414 0.909927 6.0849 1.14376 6.26685L8.0825 11.6634C8.31626 11.8453 8.69031 11.8453 8.92414 11.6634L10.4764 10.4561C10.7102 10.2742 10.7102 9.9834 10.4764 9.80145L5.51083 5.9397L10.4764 2.07777Z" fill="#AA9B77"/>
+                            </svg></span>
+                            <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4125 6.26685C10.6464 6.0849 10.6464 5.79414 10.4125 5.61219L3.4738 0.215661C3.24005 0.03407 2.866 0.03407 2.63217 0.215661L1.07986 1.42312C0.846102 1.60471 0.846102 1.89582 1.07986 2.07777L6.04547 5.9397L1.07986 9.80145C0.846102 9.9834 0.846102 10.2742 1.07986 10.4561L2.63217 11.6634C2.866 11.8453 3.24005 11.8453 3.4738 11.6634L10.4125 6.26685Z" fill="#AA9B77"/>
+                            </svg></span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <div class="product-card__info-line">
+                                <span class="product-card__size mix-display-block">size</span>
+                                <div class="product-card__color-sheet">
+                                    <div class="product-card__product-color product-card__product-color_blue"></div>
+                                    <div class="product-card__product-color product-card__product-color_yellow"></div>
+                                    <div class="product-card__product-color product-card__product-color_gray"></div>
+                                </div>
+                            </div>
+                            <div class="product-card__picture">
+                                <a href="#">
+                                    <img class="product-card__product-image" src="resources/products/t-shirt.png"
+                                        alt="Pants Forklaz">
+                                </a>
+                            </div>
+                            <div class="product-card__info-line">
+                                <span class="product-card__type mix-display-block">t-shirt</span>
+                                <span class="product-card__price mix-display-block">5,00€</span>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__info-line">
+                                <span class="product-card__size mix-display-block">size</span>
+                                <div class="product-card__color-sheet">
+                                    
+                                </div>
+                            </div>
+                            <div class="product-card__picture">
+                                <a href="#">
+                                    <img class="product-card__product-image" src="resources/products/pants.png"
+                                        alt="Pants Forklaz">
+                                </a>
+                            </div>
+                            <div class="product-card__info-line">
+                                <span class="product-card__type mix-display-block">Pants Forklaz</span>
+                                <span class="product-card__price mix-display-block">30,00€</span>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__info-line">
+                                <span class="product-card__size mix-display-block">10litri</span>
+                                <div class="product-card__color-sheet">
+                                    
+                                </div>
+                            </div>
+                            <div class="product-card__picture">
+                                <a href="#">
+                                    <img class="product-card__product-image" src="resources/products/backpack.png"
+                                        alt="Backpack">
+                                </a>
+                            </div>
+                            <div class="product-card__info-line">
+                                <span class="product-card__type mix-display-block">Backpack</span>
+                                <span class="product-card__price mix-display-block">60,00€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products__category">
+                    <div class="products__category-name mix-row-reverse">
+                        <h2 class="category-name">women</h2>
+                        <span class="line"></span>
+                    </div>
+                    <div class="flex-direction-wrapper">
+                        <div class="products__pagination">
+                        <span class="page-counter">1 / 5</span>
+                        <div class="direction-arrows">
+                            <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4764 2.07777C10.7102 1.89582 10.7102 1.60471 10.4764 1.42312L8.92414 0.215661C8.69031 0.03407 8.31626 0.03407 8.0825 0.215661L1.14376 5.61219C0.909927 5.79414 0.909927 6.0849 1.14376 6.26685L8.0825 11.6634C8.31626 11.8453 8.69031 11.8453 8.92414 11.6634L10.4764 10.4561C10.7102 10.2742 10.7102 9.9834 10.4764 9.80145L5.51083 5.9397L10.4764 2.07777Z" fill="#AA9B77"/>
+                            </svg></span>
+                            <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.4125 6.26685C10.6464 6.0849 10.6464 5.79414 10.4125 5.61219L3.4738 0.215661C3.24005 0.03407 2.866 0.03407 2.63217 0.215661L1.07986 1.42312C0.846102 1.60471 0.846102 1.89582 1.07986 2.07777L6.04547 5.9397L1.07986 9.80145C0.846102 9.9834 0.846102 10.2742 1.07986 10.4561L2.63217 11.6634C2.866 11.8453 3.24005 11.8453 3.4738 11.6634L10.4125 6.26685Z" fill="#AA9B77"/>
+                            </svg></span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="product-cards">
+                        <div class="product-card">
+                            <div class="product-card__info-line">
+                                <span class="product-card__size mix-display-block">size</span>
+                                <div class="product-card__color-sheet">
+                                    
+                                </div>
+                            </div>
+                            <div class="product-card__picture">
+                                <a href="#">
+                                    <img class="product-card__product-image" src="resources/products/giacket.png"
+                                        alt="Giacket">
+                                </a>
+                            </div>
+                            <div class="product-card__info-line">
+                                <span class="product-card__type mix-display-block">giacket</span>
+                                <span class="product-card__price mix-display-block">60,00€</span>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__info-line">
+                                <span class="product-card__size mix-display-block">size</span>
+                                <div class="product-card__color-sheet">
+                                    
+                                </div>
+                            </div>
+                            <div class="product-card__picture">
+                                <a href="#">
+                                    <img class="product-card__product-image" src="resources/products/shoes.png"
+                                        alt="Trekking shoes">
+                                </a>
+                            </div>
+                            <div class="product-card__info-line">
+                                <span class="product-card__type mix-display-block">trekking shoes</span>
+                                <span class="product-card__price mix-display-block">80,00€</span>
+                            </div>
+                        </div>
+
+                        <div class="product-card">
+                            <div class="product-card__info-line">
+                                <span class="product-card__size mix-display-block">size</span>
+                                <div class="product-card__color-sheet">
+                                    <div class="product-card__product-color product-card__product-color_pink"></div>
+                                    <div class="product-card__product-color product-card__product-color_white"></div>
+                                </div>
+                            </div>
+                            <div class="product-card__picture">
+                                <a href="#">
+                                    <img class="product-card__product-image" src="resources/products/t-shirt2.png"
+                                        alt="T-shirt">
+                                </a>
+                            </div>
+                            <div class="product-card__info-line">
+                                <span class="product-card__type mix-display-block">t-shirt</span>
+                                <span class="product-card__price mix-display-block">20,00€</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us">
+            <div class="about-us__text-block">
+                <h2 class="about-us__title">About us</h2>
+                <p class="about-us__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do<br>
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.<br>Ut enim ad minim veniam, quis
+                    nostrud<br>exercitation</p>
+            </div>
+        </section>
+        <aside class="advertisement">
+            <div class="advertisement__logo">
+                <a href="#">
+                    <img src="resources/twitter.png" alt="Twitter">
+                </a>
+            </div>
+            <span class="advertisement__description">“ E-commerce psd theme available ”</span>
+        </aside>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__trekking-info">
+                <h3 class="trekking-title mix-bottom-margin-10">Trekking</h3>
+                <p class="trekking-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="footer__links">
+                <nav class="footer__menu mix-bottom-margin-10">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Credits</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Privacy</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">About</a></li>
+                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <aside><span class="design-credit">Design by gianluca cosetta</span></aside>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
