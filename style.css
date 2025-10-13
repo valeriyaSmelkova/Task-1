@@ -553,6 +553,9 @@ legend {
 }
 
 @media (max-width: 768px) {
+    .header {
+        background: url("resources/header-image-small.webp") center center no-repeat;
+    }
     .header__block1 {
         flex-direction: column;
         justify-content: center;
