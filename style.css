@@ -111,10 +111,12 @@ legend {
 @font-face {
     font-family: 'Quicksand_bold';
     src: url('quicksand/Quicksand_Bold.otf') format('opentype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Quicksand_regular';
     src: url('quicksand/Quicksand_Book.otf') format('opentype');
+    font-display: swap;
 }
 
 .body {
