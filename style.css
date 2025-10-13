@@ -331,18 +331,17 @@ legend {
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
-}
-
-.product-card__picture-wrapper {
-    padding: 28px 0;
+    display:block;
 }
 
 .product-card__picture{
-    height: 260px;
+    height: auto;
+    max-width: 100%;
     object-fit: contain;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 28px 0;
 }
 
 .product-card__product-image {
@@ -382,6 +381,7 @@ legend {
     font-size: 18px;
     line-height: 18px;
     text-transform: uppercase;
+    display:block;
 }
 
 .product-card__price {
@@ -390,6 +390,7 @@ legend {
     font-size: 22px;
     line-height: 22px;
     text-transform: uppercase;
+    display:block;
 }
 
 .about-us {
