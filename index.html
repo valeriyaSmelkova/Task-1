@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preload" href="quicksand/Quicksand_Bold.otf" as="font" type="font/otf" crossorigin>
-    <link rel="preload" href="quicksand/Quicksand_Book.otf" as="font" type="font/otf" crossorigin>
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
     <meta name="description"
@@ -15,17 +13,17 @@
 <body class="body">
     <header class="header">
         <div class="header__block1">
-            <div class="logo">
-                <a href="#">
-                    <img src="resources/logo.webp" alt="Logo">
+            <div class="header__logo">
+                <a href="#" class="header__logo-link">
+                    <img class="header__logo-picture" src="resources/logo.webp" alt="Logo">
                 </a>
             </div>
             <nav class="header__menu">
                 <ul class="header__menu-list">
                     <li class="header__menu-item"><a class="header__menu-item-link" href="#">Home</a></li>
                     <li class="header__menu-item"><a class="header__menu-item-link" href="#">Products</a></li>
-                    <li class="header__menu-item"><a href="#">
-                            <img src="resources/cart.svg" alt="Cart">
+                    <li class="header__menu-item"><a href="#" class="header__cart-link">
+                            <img class="header__cart-picture" src="resources/cart.svg" alt="Cart">
                         </a>
                     </li>
                 </ul>
@@ -33,15 +31,17 @@
         </div>
         <div class="header__block2">
             <div class="header__header-text">
-                <h1 class="header__title mix-bottom-margin-10">Our clothing , your comfort</h1>
+                <div class="header__title-wrapper">
+                    <h1 class="header__title">Our clothing , your comfort</h1>
+                </div>
                 <p class="header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do<br>eiusmod tempor incididunt ut labore et dolore<br>magna aliqua.
                 </p>
             </div>
         </div>
         <div class="header__block3">
-            <a href="#">
-                <img src="resources/arrow-down.svg" alt="Arrow down">
+            <a href="#" class="header__down-link">
+                <img class="header__down-picture" src="resources/arrow-down.svg" alt="Down">
             </a>
         </div>
     </header>
@@ -66,8 +66,8 @@
             </form>
             <div class="products__results">
                 <div class="products__category">
-                    <div class="products__category-name">
-                        <h2 class="category-name">men</h2>
+                    <div class="products__category-name-wrapper">
+                        <h2 class="products__category-name">men</h2>
                         <span class="line"></span>
                     </div>
                     <div class="flex-direction-wrapper mix-row-reverse">
@@ -92,7 +92,7 @@
                     <div class="product-cards">
                         <div class="product-card">
                             <div class="product-card__info-line">
-                                <span class="product-card__size mix-display-block">size</span>
+                                <span class="product-card__size">size</span>
                                 <div class="product-card__color-sheet">
                                     <div class="product-card__product-color product-card__product-color_blue"></div>
                                     <div class="product-card__product-color product-card__product-color_yellow"></div>
@@ -100,60 +100,60 @@
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#">
+                                <a href="#" class="product-cart__product-link">
                                     <img class="product-card__product-image" src="resources/products/t-shirt.webp"
                                         alt="Pants Forklaz">
                                 </a>
                             </div>
                             <div class="product-card__info-line">
-                                <span class="product-card__type mix-display-block">t-shirt</span>
-                                <span class="product-card__price mix-display-block">5,00€</span>
+                                <span class="product-card__type">t-shirt</span>
+                                <span class="product-card__price">5,00€</span>
                             </div>
                         </div>
 
                         <div class="product-card">
                             <div class="product-card__info-line">
-                                <span class="product-card__size mix-display-block">size</span>
+                                <span class="product-card__size">size</span>
                                 <div class="product-card__color-sheet">
 
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#">
+                                <a href="#" class="product-cart__product-link">
                                     <img class="product-card__product-image" src="resources/products/pants.webp"
                                         alt="Pants Forklaz">
                                 </a>
                             </div>
                             <div class="product-card__info-line">
-                                <span class="product-card__type mix-display-block">Pants Forklaz</span>
-                                <span class="product-card__price mix-display-block">30,00€</span>
+                                <span class="product-card__type">Pants Forklaz</span>
+                                <span class="product-card__price">30,00€</span>
                             </div>
                         </div>
 
                         <div class="product-card">
                             <div class="product-card__info-line">
-                                <span class="product-card__size mix-display-block">10litri</span>
+                                <span class="product-card__size">10litri</span>
                                 <div class="product-card__color-sheet">
 
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#">
+                                <a href="#" class="product-cart__product-link">
                                     <img class="product-card__product-image" src="resources/products/backpack.webp"
                                         alt="Backpack">
                                 </a>
                             </div>
                             <div class="product-card__info-line">
-                                <span class="product-card__type mix-display-block">Backpack</span>
-                                <span class="product-card__price mix-display-block">60,00€</span>
+                                <span class="product-card__type">Backpack</span>
+                                <span class="product-card__price">60,00€</span>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="products__category">
-                    <div class="products__category-name mix-row-reverse">
-                        <h2 class="category-name">women</h2>
+                    <div class="products__category-name-wrapper mix-row-reverse">
+                        <h2 class="products__category-name">women</h2>
                         <span class="line"></span>
                     </div>
                     <div class="flex-direction-wrapper">
@@ -178,59 +178,59 @@
                     <div class="product-cards">
                         <div class="product-card">
                             <div class="product-card__info-line">
-                                <span class="product-card__size mix-display-block">size</span>
+                                <span class="product-card__size">size</span>
                                 <div class="product-card__color-sheet">
 
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#">
+                                <a href="#" class="product-cart__product-link">
                                     <img class="product-card__product-image" src="resources/products/giacket.webp"
                                         alt="Giacket">
                                 </a>
                             </div>
                             <div class="product-card__info-line">
-                                <span class="product-card__type mix-display-block">giacket</span>
-                                <span class="product-card__price mix-display-block">60,00€</span>
+                                <span class="product-card__type">giacket</span>
+                                <span class="product-card__price">60,00€</span>
                             </div>
                         </div>
 
                         <div class="product-card">
                             <div class="product-card__info-line">
-                                <span class="product-card__size mix-display-block">size</span>
+                                <span class="product-card__size">size</span>
                                 <div class="product-card__color-sheet">
 
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#">
+                                <a href="#" class="product-cart__product-link">
                                     <img class="product-card__product-image" src="resources/products/shoes.webp"
                                         alt="Trekking shoes">
                                 </a>
                             </div>
                             <div class="product-card__info-line">
-                                <span class="product-card__type mix-display-block">trekking shoes</span>
-                                <span class="product-card__price mix-display-block">80,00€</span>
+                                <span class="product-card__type">trekking shoes</span>
+                                <span class="product-card__price">80,00€</span>
                             </div>
                         </div>
 
                         <div class="product-card">
                             <div class="product-card__info-line">
-                                <span class="product-card__size mix-display-block">size</span>
+                                <span class="product-card__size">size</span>
                                 <div class="product-card__color-sheet">
                                     <div class="product-card__product-color product-card__product-color_pink"></div>
                                     <div class="product-card__product-color product-card__product-color_white"></div>
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#">
+                                <a href="#" class="product-cart__product-link">
                                     <img class="product-card__product-image" src="resources/products/t-shirt2.webp"
                                         alt="T-shirt">
                                 </a>
                             </div>
                             <div class="product-card__info-line">
-                                <span class="product-card__type mix-display-block">t-shirt</span>
-                                <span class="product-card__price mix-display-block">20,00€</span>
+                                <span class="product-card__type">t-shirt</span>
+                                <span class="product-card__price">20,00€</span>
                             </div>
                         </div>
                     </div>
@@ -247,8 +247,8 @@
         </section>
         <aside class="advertisement">
             <div class="advertisement__logo">
-                <a href="#">
-                    <img src="resources/twitter.webp" alt="Twitter">
+                <a href="#" class="advertisement__twitter-link">
+                    <img class="advertisement__twitter-logo" src="resources/twitter.webp" alt="Twitter">
                 </a>
             </div>
             <span class="advertisement__description">“ E-commerce psd theme available ”</span>
@@ -256,14 +256,17 @@
     </main>
     <footer class="footer">
         <div class="footer__wrapper">
-            <div class="footer__trekking-info">
-                <h3 class="trekking-title mix-bottom-margin-10">Trekking</h3>
-                <p class="trekking-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            <div class="trekking-info">
+                <div class="trekking-info__title-wrapper">
+                    <h3 class="trekking-info__title">Trekking</h3>
+                </div>
+                <p class="trekking-info__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
-            <div class="footer__links">
-                <nav class="footer__menu mix-bottom-margin-10">
+            <div class="footer__info">
+                <nav class="footer__menu">
                     <ul class="footer__menu-list">
                         <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Credits</a></li>
                         <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Privacy</a></li>
@@ -276,5 +279,4 @@
         </div>
     </footer>
 </body>
-
 </html>

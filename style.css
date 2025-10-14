@@ -155,20 +155,19 @@ legend {
     padding: 0 96px;
 }
 
-
 .header__header-text{
     text-align: center;
     color: var(--white);
-}
-
-.mix-bottom-margin-10 {
-    margin-bottom: 10px;
 }
 
 .header__title {
     font-family: 'Quicksand_bold', sans-serif;
     font-size: 60px;
     line-height: 60px;
+}
+
+.header__title-wrapper {
+    margin-bottom: 10px;
 }
 
 .header__description {
@@ -182,12 +181,9 @@ legend {
     text-align: center;
 }
 
-.mix-padding-left-right-96 {
-    padding: 0 96px;
-}
-
 .categories-filter {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 45px 96px;
@@ -248,14 +244,23 @@ legend {
     border-radius: 5px;
 }
 
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .products__results {
-    padding: 85px 96px 130px 96px;
+    padding: 85px 30px 130px 30px;
     display:flex;
     flex-direction: column;
     gap: 90px;
+    max-width: 1148px;
+    width: 100%;
 }
 
-.products__category-name {
+.products__category-name-wrapper {
     display: flex;
     gap: 40px;
     align-items: center;
@@ -285,7 +290,7 @@ legend {
     line-height: 16px;
 }
 
-.category-name {
+.products__category-name {
     color: var(--black);
     font-family: 'Quicksand_bold', sans-serif;
     font-size: 20px;
@@ -319,10 +324,8 @@ legend {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-.mix-display-block {
-    display: block;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .product-card__size {
@@ -335,8 +338,6 @@ legend {
 }
 
 .product-card__picture{
-    height: auto;
-    max-width: 100%;
     object-fit: contain;
     display: flex;
     align-items: center;
@@ -345,7 +346,9 @@ legend {
 }
 
 .product-card__product-image {
-    height: 189px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .product-card__color-sheet {
@@ -398,18 +401,19 @@ legend {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 70px 20px;
 }
 
 .about-us__text-block {
     border:2px solid var(--dark-beige);
     height: 250px;
-    width: 70%;
+    max-width: 710px;
+    width:100%;
     position: relative;
     display:flex;
     align-items: center;
     justify-content: center;
     padding: 10px;
-    margin: 70px 0;
 }
 
 .about-us__title {
@@ -435,8 +439,7 @@ legend {
 }
 
 .advertisement {
-    height: 72px;
-    padding: 0 70px;
+    padding: 24px 70px;
     background-color: var(--grey);
     display: flex;
     align-items: center;
@@ -461,18 +464,23 @@ legend {
     align-items: center;
 }
 
-.footer__trekking-info {
+.trekking-info {
     width: 318px;
 }
 
-.trekking-title {
+.trekking-info__title {
     text-transform: uppercase;
     color: var(--white);
     font-family: 'Quicksand_bold', sans-serif;
     font-size: 20px;
     line-height: 20px;
 }
-.trekking-description {
+
+.trekking-info__title-wrapper {
+    margin-bottom: 10px;
+}
+
+.trekking-info__description {
     text-transform: uppercase;
     color: var(--white);
     font-family: 'Quicksand_bold', sans-serif;
@@ -482,7 +490,12 @@ legend {
 
 .footer__menu-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
+}
+
+.footer__menu {
+    margin-bottom: 10px;
 }
 
 .footer__menu-item:not(:last-child)::after {
@@ -512,8 +525,18 @@ legend {
 }
 
 
+@media (max-width: 1200px) {
+    .products__results {
+        max-width: 764px;
+        width: 100%;
+    }
+}
 
-@media (max-width: 832px) {
+@media (max-width: 861px) {
+    .products__results {
+        max-width: 380px;
+        width: 100%;
+    }
     .product-cards {
         justify-content: center;
     }
@@ -521,8 +544,12 @@ legend {
 
 @media (max-width: 805px) {
     .categories-filter {
-        justify-content: center;
         flex-direction: column;
+        gap: 20px;
+    }
+    .categories-filter__filter-group {
+        flex-direction: column;
+        justify-content: center;
         gap: 20px;
     }
 }
@@ -535,16 +562,17 @@ legend {
         padding: 50px 65px;
     }
 
-    .footer__trekking-info {
+    .trekking-info {
         width: 100%;
     }
 
-    .trekking-title {
+    .trekking-info__title {
         text-align: center;
     }
 
-    .trekking-description {
+    .trekking-info__description {
         text-align: center;
+        font-size: 14px;
     }
 
     .design-credit {
@@ -555,6 +583,7 @@ legend {
 @media (max-width: 768px) {
     .header {
         background: url("resources/header-image-small.webp") center center no-repeat;
+        background-size: cover;
     }
     .header__block1 {
         flex-direction: column;
@@ -565,11 +594,7 @@ legend {
     .header__menu-list {
         gap: 25px;
     }
-    .categories-filter__filter-group {
-        flex-direction: column;
-        justify-content: center;
-        gap: 20px;
-    }
+    
     .header__block2 {
         padding: 0 30px;
     }
@@ -580,13 +605,23 @@ legend {
     .header__description {
         font-size: 16px;
         line-height: 20px;
-}
+    }
+    .advertisement {
+        padding: 24px 20px;
+    }
 
 }
 
 @media (max-width: 425px) {
     .categories-filter {
         padding: 45px 30px;
+    }
+    .footer__menu-list {
+        justify-content: center;
+    }
+    .footer__menu-item:not(:last-child)::after {
+        content: '';
+        margin: 0;
     }
 
 }
