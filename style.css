@@ -618,7 +618,10 @@ legend {
 }
 
 @media (max-width: 426px) {
-    
+    .header {
+        background: url("resources/header-image-451px.webp") center center no-repeat;
+        background-size: cover;
+    }
     .categories-filter {
         padding: 45px 30px;
     }
