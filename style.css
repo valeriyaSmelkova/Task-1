@@ -136,6 +136,7 @@ legend {
     align-items: center;
     padding: 40px 65px 0 65px;
 }
+
 .header__menu-list {
     display: flex;
     flex-direction: row;
@@ -555,6 +556,10 @@ legend {
 }
 
 @media (max-width: 780px) {
+    .header__logo-picture {
+        width: 80px;
+        height: 60px;
+    }
     .footer__wrapper {
         flex-direction: column;
         justify-content: center;
@@ -580,9 +585,9 @@ legend {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .header {
-        background: url("resources/header-image-small.webp") center center no-repeat;
+        background: url("resources/header-image-768px.webp") center center no-repeat;
         background-size: cover;
     }
     .header__block1 {
@@ -612,7 +617,11 @@ legend {
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
+    .header {
+        background: url("resources/header-image-451px.webp") center center no-repeat;
+        background-size: cover;
+    }
     .categories-filter {
         padding: 45px 30px;
     }
