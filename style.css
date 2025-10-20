@@ -22,12 +22,6 @@ a, a:link, a:visited  {
 a:hover  {
     text-decoration: none;
 }
-:focus,:active {
-    outline: none;
-}
-a:focus,a:active {
-    outline: none;
-}
 
 /* Common */
 
@@ -40,7 +34,7 @@ h1, h2, h3, h4, h5, h6, p {
 	font-weight: inherit;
 }
 
-ul, ul li {
+ul {
 	margin: 0;
     padding: 0;
     list-style: none;
@@ -82,11 +76,6 @@ button, input[type="submit"] {
     cursor: pointer;
 }
 
-input:focus, input:active,
-button:focus, button:active {
-    outline: none;
-}
-
 button::-moz-focus-inner {
 	padding: 0;
 	border: 0;
@@ -99,8 +88,8 @@ legend {
 
 :root {
     --white:#ffffff;
-    --beige: #AA9B77;
-    --dark-beige: #918363;
+    --beige: #99865a;
+    --dark-beige: #675a3d;
     --light-beige: #F5F6F7;
     --black: #424242;
     --dark: #333333;
@@ -124,7 +113,7 @@ legend {
 }
 
 .header {
-    background: url("resources/header-image.png") center center no-repeat;
+    background: url("resources/header-image.webp") center center no-repeat;
     background-size: cover;
     height: 100vh;
     position: relative;
@@ -149,6 +138,25 @@ legend {
     font-size: 18px;
     line-height: 18px;
 }
+
+.header__menu-item-link:hover {
+    text-decoration: underline;
+}
+
+.header__menu-item-link:active {
+    text-decoration: underline;
+}
+
+.header__cart-picture {
+    height: 21px;
+    width: 25px;
+}
+
+.header__down-picture {
+    height: 22px;
+    width: 35px;
+}
+
 .header__block2 {
     position: absolute;
     top: 38%;
@@ -234,6 +242,14 @@ legend {
   display: block;
 }
 
+.categories-filter__filter-checkbox:hover {
+    background-color: var(--light-grey);
+}
+
+.categories-filter__filter-checkbox:active {
+    background-color: var(--light-grey);
+}
+
 .categories-filter__submit {
     text-transform: uppercase;
     color: var(--white);
@@ -245,11 +261,18 @@ legend {
     border-radius: 5px;
 }
 
+.categories-filter__submit:hover {
+    background-color: var(--dark-beige);
+}
+
+.categories-filter__submit:active {
+    background-color: var(--dark-beige);
+}
+
 .products {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .products__results {
@@ -279,6 +302,10 @@ legend {
     gap: 5px;
     padding-bottom: 18px;
 }
+
+.direction-arrows {
+        cursor: pointer;
+    }
 
 .mix-row-reverse {
     flex-direction: row-reverse;
@@ -321,6 +348,10 @@ legend {
     padding: 28px 24px;
 }
 
+.product-card:hover {
+    background-color: var(--light-grey);
+}
+
 .product-card__info-line {
     display: flex;
     justify-content: space-between;
@@ -361,6 +392,7 @@ legend {
     width: 22px;
     height: 21px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .product-card__product-color_blue {
@@ -516,6 +548,14 @@ legend {
     line-height: 14px;
 }
 
+.footer__menu-item-link:hover {
+    text-decoration: underline;
+}
+
+.footer__menu-item-link:active {
+    text-decoration: underline;
+}
+
 .design-credit {
     display: block;
     text-align: right;
@@ -557,9 +597,12 @@ legend {
 
 @media (max-width: 780px) {
     .header__logo-picture {
-        width: 80px;
-        height: 60px;
+        width: 120px;
+        height: 90px;
     }
+
+    
+
     .footer__wrapper {
         flex-direction: column;
         justify-content: center;
@@ -577,6 +620,7 @@ legend {
 
     .trekking-info__description {
         text-align: center;
+        font-size: 14px;
     }
 
     .design-credit {
@@ -585,6 +629,10 @@ legend {
 }
 
 @media (max-width: 769px) {
+    .header {
+        background: url("resources/header-image-768px.webp") center center no-repeat;
+        background-size: cover;
+    }
     .header__block1 {
         flex-direction: column;
         justify-content: center;
@@ -613,6 +661,10 @@ legend {
 }
 
 @media (max-width: 426px) {
+    .header {
+        background: url("resources/header-image-451px.webp") center center no-repeat;
+        background-size: cover;
+    }
     .categories-filter {
         padding: 45px 30px;
     }

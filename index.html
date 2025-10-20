@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Home</title>
-    <meta name="description"
-        content="Backpacking & hiking store with top-quality outdoor gear. 
+    <meta name="description" content="Backpacking & hiking store with top-quality outdoor gear. 
         Expert recommendations, competitive prices, secure payments.">
 </head>
 
@@ -15,15 +14,15 @@
     <header class="header">
         <div class="header__block1">
             <div class="header__logo">
-                <a href="#" class="header__logo-link">
-                    <img class="header__logo-picture" src="resources/logo.png" alt="Logo">
+                <a title="Home" aria-label="Home" href="#" class="header__logo-link" tabindex="0">
+                    <img class="header__logo-picture" src="resources/logo.svg" alt="Logo">
                 </a>
             </div>
             <nav class="header__menu">
-                <ul class="header__menu-list">
-                    <li class="header__menu-item"><a class="header__menu-item-link" href="#">Home</a></li>
-                    <li class="header__menu-item"><a class="header__menu-item-link" href="#">Products</a></li>
-                    <li class="header__menu-item"><a href="#" class="header__cart-link">
+                <ul class="header__menu-list" role="list">
+                    <li class="header__menu-item"><a title="Home" class="header__menu-item-link" href="#">Home</a></li>
+                    <li class="header__menu-item"><a title="Products" class="header__menu-item-link" href="#">Products</a></li>
+                    <li class="header__menu-item"><a title="Cart" aria-label="Cart" href="#" class="header__cart-link">
                             <img class="header__cart-picture" src="resources/cart.svg" alt="Cart">
                         </a>
                     </li>
@@ -41,7 +40,7 @@
             </div>
         </div>
         <div class="header__block3">
-            <a href="#" class="header__down-link">
+            <a title="Down" aria-label="Down" href="#" class="header__down-link">
                 <img class="header__down-picture" src="resources/arrow-down.svg" alt="Down">
             </a>
         </div>
@@ -50,20 +49,20 @@
         <section class="products">
             <form class="categories-filter">
                 <div class="categories-filter__filter-group">
-                    <label class="categories-filter__filter-name">
+                    <label title="Men" class="categories-filter__filter-name">
                         <input class="categories-filter__filter-checkbox" type="checkbox" name="category" value="men">
                         men
                     </label>
-                    <label class="categories-filter__filter-name">
+                    <label title="Women" class="categories-filter__filter-name">
                         <input class="categories-filter__filter-checkbox" type="checkbox" name="category" value="women">
                         women
                     </label>
-                    <label class="categories-filter__filter-name">
+                    <label title="Children" class="categories-filter__filter-name">
                         <input class="categories-filter__filter-checkbox" type="checkbox" name="category"
                             value="children"> children
                     </label>
                 </div>
-                <button class="categories-filter__submit" type="submit">see all products</button>
+                <button title="See all products" class="categories-filter__submit" type="submit">see all products</button>
             </form>
             <div class="products__results">
                 <div class="products__category">
@@ -75,18 +74,24 @@
                         <div class="products__pagination">
                             <span class="page-counter">1 / 5</span>
                             <div class="direction-arrows">
-                                <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span class="direction-arrows__item" tabindex="0" aria-label="Left" role="button" aria-pressed="false">
+                                    <svg class="direction-arrows__svg" width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Left</title>
                                         <path
                                             d="M10.4764 2.07777C10.7102 1.89582 10.7102 1.60471 10.4764 1.42312L8.92414 0.215661C8.69031 0.03407 8.31626 0.03407 8.0825 0.215661L1.14376 5.61219C0.909927 5.79414 0.909927 6.0849 1.14376 6.26685L8.0825 11.6634C8.31626 11.8453 8.69031 11.8453 8.92414 11.6634L10.4764 10.4561C10.7102 10.2742 10.7102 9.9834 10.4764 9.80145L5.51083 5.9397L10.4764 2.07777Z"
-                                            fill="#AA9B77" />
-                                    </svg></span>
-                                <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12"
+                                            fill="#99865a" />
+                                    </svg>
+                                </span>
+                                <span class="direction-arrows__item" tabindex="0" aria-label="Right" role="button" aria-pressed="false">
+                                    <svg class="direction-arrows__svg" width="11" height="12" viewBox="0 0 11 12"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Right</title>
                                         <path
                                             d="M10.4125 6.26685C10.6464 6.0849 10.6464 5.79414 10.4125 5.61219L3.4738 0.215661C3.24005 0.03407 2.866 0.03407 2.63217 0.215661L1.07986 1.42312C0.846102 1.60471 0.846102 1.89582 1.07986 2.07777L6.04547 5.9397L1.07986 9.80145C0.846102 9.9834 0.846102 10.2742 1.07986 10.4561L2.63217 11.6634C2.866 11.8453 3.24005 11.8453 3.4738 11.6634L10.4125 6.26685Z"
-                                            fill="#AA9B77" />
-                                    </svg></span>
+                                            fill="#99865a" />
+                                    </svg>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -95,15 +100,15 @@
                             <div class="product-card__info-line">
                                 <span class="product-card__size">size</span>
                                 <div class="product-card__color-sheet">
-                                    <div class="product-card__product-color product-card__product-color_blue"></div>
-                                    <div class="product-card__product-color product-card__product-color_yellow"></div>
-                                    <div class="product-card__product-color product-card__product-color_gray"></div>
+                                    <div title="Blue" class="product-card__product-color product-card__product-color_blue" tabindex="0"></div>
+                                    <div title="Yellow" class="product-card__product-color product-card__product-color_yellow" tabindex="0"></div>
+                                    <div title="Gray" class="product-card__product-color product-card__product-color_gray" tabindex="0"></div>
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#" class="product-cart__product-link">
-                                    <img class="product-card__product-image" src="resources/products/t-shirt.png"
-                                        alt="Pants Forklaz">
+                                <a title="T-shirt" aria-label="T-shirt" href="#" class="product-cart__product-link">
+                                    <img class="product-card__product-image" src="resources/products/t-shirt.webp"
+                                        alt="T-shirt">
                                 </a>
                             </div>
                             <div class="product-card__info-line">
@@ -120,8 +125,8 @@
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#" class="product-cart__product-link">
-                                    <img class="product-card__product-image" src="resources/products/pants.png"
+                                <a title="Pants Forklaz" aria-label="Pants Forklaz" href="#" class="product-cart__product-link">
+                                    <img class="product-card__product-image" src="resources/products/pants.webp"
                                         alt="Pants Forklaz">
                                 </a>
                             </div>
@@ -139,8 +144,8 @@
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#" class="product-cart__product-link">
-                                    <img class="product-card__product-image" src="resources/products/backpack.png"
+                                <a title="Backpack" aria-label="Backpack" href="#" class="product-cart__product-link">
+                                    <img class="product-card__product-image" src="resources/products/backpack.webp"
                                         alt="Backpack">
                                 </a>
                             </div>
@@ -161,18 +166,24 @@
                         <div class="products__pagination">
                             <span class="page-counter">1 / 5</span>
                             <div class="direction-arrows">
-                                <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12"
-                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <span class="direction-arrows__item" tabindex="0" aria-label="Left" role="button" aria-pressed="false">
+                                    <svg class="direction-arrows__svg" width="11" height="12" viewBox="0 0 11 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <title>Left</title>
                                         <path
                                             d="M10.4764 2.07777C10.7102 1.89582 10.7102 1.60471 10.4764 1.42312L8.92414 0.215661C8.69031 0.03407 8.31626 0.03407 8.0825 0.215661L1.14376 5.61219C0.909927 5.79414 0.909927 6.0849 1.14376 6.26685L8.0825 11.6634C8.31626 11.8453 8.69031 11.8453 8.92414 11.6634L10.4764 10.4561C10.7102 10.2742 10.7102 9.9834 10.4764 9.80145L5.51083 5.9397L10.4764 2.07777Z"
-                                            fill="#AA9B77" />
-                                    </svg></span>
-                                <span class="direction-arrows__item"><svg width="11" height="12" viewBox="0 0 11 12"
+                                            fill="#99865a" />
+                                    </svg>
+                                </span>
+                                <span class="direction-arrows__item" tabindex="0" aria-label="Right" role="button" aria-pressed="false">
+                                    <svg class="direction-arrows__svg" width="11" height="12" viewBox="0 0 11 12"
                                         fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <title>Right</title>
                                         <path
                                             d="M10.4125 6.26685C10.6464 6.0849 10.6464 5.79414 10.4125 5.61219L3.4738 0.215661C3.24005 0.03407 2.866 0.03407 2.63217 0.215661L1.07986 1.42312C0.846102 1.60471 0.846102 1.89582 1.07986 2.07777L6.04547 5.9397L1.07986 9.80145C0.846102 9.9834 0.846102 10.2742 1.07986 10.4561L2.63217 11.6634C2.866 11.8453 3.24005 11.8453 3.4738 11.6634L10.4125 6.26685Z"
-                                            fill="#AA9B77" />
-                                    </svg></span>
+                                            fill="#99865a" />
+                                    </svg>
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -185,8 +196,8 @@
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#" class="product-cart__product-link">
-                                    <img class="product-card__product-image" src="resources/products/giacket.png"
+                                <a title="Giacket" aria-label="Giacket" href="#" class="product-cart__product-link">
+                                    <img class="product-card__product-image" src="resources/products/giacket.webp"
                                         alt="Giacket">
                                 </a>
                             </div>
@@ -204,8 +215,8 @@
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#" class="product-cart__product-link">
-                                    <img class="product-card__product-image" src="resources/products/shoes.png"
+                                <a title="Trekking shoes" aria-label="Trekking shoes" href="#" class="product-cart__product-link">
+                                    <img class="product-card__product-image" src="resources/products/shoes.webp"
                                         alt="Trekking shoes">
                                 </a>
                             </div>
@@ -219,13 +230,13 @@
                             <div class="product-card__info-line">
                                 <span class="product-card__size">size</span>
                                 <div class="product-card__color-sheet">
-                                    <div class="product-card__product-color product-card__product-color_pink"></div>
-                                    <div class="product-card__product-color product-card__product-color_white"></div>
+                                    <div title="Pink" class="product-card__product-color product-card__product-color_pink" tabindex="0"></div>
+                                    <div title="White" class="product-card__product-color product-card__product-color_white" tabindex="0"></div>
                                 </div>
                             </div>
                             <div class="product-card__picture">
-                                <a href="#" class="product-cart__product-link">
-                                    <img class="product-card__product-image" src="resources/products/t-shirt2.png"
+                                <a title="T-shirt" aria-label="T-shirt" href="#" class="product-cart__product-link">
+                                    <img class="product-card__product-image" src="resources/products/t-shirt2.webp"
                                         alt="T-shirt">
                                 </a>
                             </div>
@@ -248,8 +259,8 @@
         </section>
         <aside class="advertisement">
             <div class="advertisement__logo">
-                <a href="#" class="advertisement__twitter-link">
-                    <img class="advertisement__twitter-logo" src="resources/twitter.png" alt="Twitter">
+                <a title="Twitter" aria-label="Twitter" href="#" class="advertisement__twitter-link">
+                    <img class="advertisement__twitter-logo" src="resources/twitter.webp" alt="Twitter">
                 </a>
             </div>
             <span class="advertisement__description">“ E-commerce psd theme available ”</span>
@@ -268,11 +279,11 @@
             </div>
             <div class="footer__info">
                 <nav class="footer__menu">
-                    <ul class="footer__menu-list">
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Credits</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Privacy</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">About</a></li>
-                        <li class="footer__menu-item"><a class="footer__menu-item-link" href="#">Contact</a></li>
+                    <ul role="list" class="footer__menu-list">
+                        <li class="footer__menu-item"><a title="Credits" class="footer__menu-item-link" href="#">Credits</a></li>
+                        <li class="footer__menu-item"><a title="Privacy" class="footer__menu-item-link" href="#">Privacy</a></li>
+                        <li class="footer__menu-item"><a title="About" class="footer__menu-item-link" href="#">About</a></li>
+                        <li class="footer__menu-item"><a title="Contact" class="footer__menu-item-link" href="#">Contact</a></li>
                     </ul>
                 </nav>
                 <aside><span class="design-credit">Design by gianluca cosetta</span></aside>
@@ -280,4 +291,5 @@
         </div>
     </footer>
 </body>
+
 </html>
