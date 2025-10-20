@@ -479,6 +479,11 @@ legend {
     gap: 20px;
 }
 
+.advertisement__twitter-logo{
+    width: 30px;
+    height: 25px;
+}
+
 .advertisement__description {
     color: var(--white);
     font-family: 'Quicksand_bold', sans-serif;
