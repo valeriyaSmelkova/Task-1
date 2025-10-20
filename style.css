@@ -126,6 +126,11 @@ legend {
     padding: 40px 65px 0 65px;
 }
 
+    .header__logo-picture {
+        width: 53px;
+        height: 40px;
+    }
+
 .header__menu-list {
     display: flex;
     flex-direction: row;
@@ -605,8 +610,6 @@ legend {
         width: 120px;
         height: 90px;
     }
-
-    
 
     .footer__wrapper {
         flex-direction: column;
