@@ -304,7 +304,7 @@ legend {
     padding-bottom: 18px;
 }
 
-.direction-arrows {
+.direction-arrows__item {
         cursor: pointer;
     }
 
