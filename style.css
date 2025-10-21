@@ -88,8 +88,9 @@ legend {
 
 :root {
     --white:#ffffff;
-    --beige: #99865a;
-    --dark-beige: #675a3d;
+    --beige: #AA9B77;
+    --medium-beige: #5f5335;
+    --dark-beige: #322915;
     --light-beige: #F5F6F7;
     --black: #424242;
     --dark: #333333;
@@ -312,7 +313,7 @@ legend {
 }
 
 .page-counter {
-    color: var(--beige);
+    color: var(--medium-beige);
     font-family: 'Quicksand_bold', sans-serif;
     font-size: 16px;
     line-height: 16px;
@@ -412,7 +413,7 @@ legend {
 }
 
 .product-card__type {
-    color: var(--beige);
+    color: var(--medium-beige);
     font-family: 'Quicksand_bold', sans-serif;
     font-size: 18px;
     line-height: 18px;
@@ -438,7 +439,7 @@ legend {
 }
 
 .about-us__text-block {
-    border:2px solid var(--dark-beige);
+    border:2px solid var(--medium-beige);
     height: 250px;
     max-width: 710px;
     width:100%;
