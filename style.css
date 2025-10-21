@@ -89,7 +89,7 @@ legend {
 :root {
     --white:#ffffff;
     --beige: #AA9B77;
-    --medium-beige: #5f5335;
+    --medium-beige: #64573A;
     --dark-beige: #322915;
     --light-beige: #F5F6F7;
     --black: #424242;
@@ -257,7 +257,7 @@ legend {
     font-family: 'Quicksand_bold', sans-serif;
     font-size: 14px;
     line-height: 14px;
-    background-color: var(--beige);
+    background-color: var(--medium-beige);
     padding:20px 33px 20px 33px;
     border-radius: 5px;
 }
@@ -465,7 +465,7 @@ legend {
 }
 
 .about-us__description {
-    color: var(--black);
+    color: var(--dark-beige);
     font-family: 'Quicksand_bold', sans-serif;
     font-size: 16px;
     line-height: 24px;
