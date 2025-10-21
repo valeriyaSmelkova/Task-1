@@ -614,6 +614,10 @@ legend {
         padding: 50px 65px;
     }
 
+    .direction-arrows__svg {
+        width: 16px;
+        height: 18px;
+    }
     .trekking-info {
         width: 100%;
     }
